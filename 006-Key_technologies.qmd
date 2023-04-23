@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: sentence
----
-
 # Key Technologies
 
 The key technologies to implement all of the ideas proposed here already exist.
