@@ -1,0 +1,54 @@
+project:
+  type: book
+
+book:
+  title: Literate Science
+  subtitle: "The problems of academic publishing and some thoughts on how to fix them"
+  author: "Richard J. Acton"
+  # date: "`r Sys.Date()`"
+  date: 2023-01-30
+  site-url: https://richardjacton.gitlab.io/literate-science
+  repo-url: https://renkulab.io/gitlab/racton/literate-science
+  repo-branch: master
+    # favicon: 
+  repo-actions: [edit, issue, source]
+  downloads: [pdf, epub]
+  chapters:
+    - index.qmd
+    - 001-intro.qmd
+    - 002-units_of_publication.qmd
+    - 003-Incentives.qmd
+    - 004-Medium_matters.qmd
+    - 005-Computational-irreproducibility.qmd
+    - 006-Key_technologies.qmd
+    - 007-The_platform.qmd
+    - 008-Adoption.qmd
+    - 010-references.qmd
+
+comments:
+  hypothesis: true
+
+bibliography: [book.bib]
+#biblio-style: apalike
+link-citations: yes
+description: "The problems of academic publishing and some thoughts on how to fix them"
+
+format:
+  html:
+    # cover-image:
+    theme:
+      dark: [darkly, theme.scss]
+      light: [flatly, theme.scss]
+  pdf:
+    # cover-image: 
+    documentclass: scrreport
+  # epub:
+    # cover-image: 
+
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+
+# citation:
+#   type: book

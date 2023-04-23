@@ -2,6 +2,14 @@
 # Created by https://www.gitignore.io/api/macos,python,R,linux,vim,emacs,visualstudiocode,intellij
 # Edit at https://www.gitignore.io/?templates=macos,python,R,linux,vim,emacs,visualstudiocode,intellij
 
+### R ###
+.Rproj.user
+.Rhistory
+.RData
+_book
+_bookdown_files
+rsconnect
+
 ### Emacs ###
 # -*- mode: gitignore; -*-
 *~
@@ -378,3 +386,5 @@ tags
 .renku.lock
 .renku/tmp
 .renku/cache
+
+/.quarto/

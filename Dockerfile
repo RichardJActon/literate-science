@@ -1,6 +1,7 @@
 # For finding latest versions of the base image see
 # https://github.com/SwissDataScienceCenter/renkulab-docker
-FROM renku/renkulab-r:4.2.0-0.16.0
+ARG RENKU_BASE_IMAGE=renku/renkulab-r:4.2.0-0.12.0
+FROM ${RENKU_BASE_IMAGE}
 
 # Uncomment and adapt if code is to be included in the image
 # COPY src /code/src
@@ -14,35 +15,29 @@ RUN apt-get -y update && \
   apt-get clean && \
   apt-get install -y --no-install-recommends \
   apt-utils \
-    libncurses5-dev \
-    libncursesw5-dev \
-    parallel \
-    libgit2-dev \
-    tk-dev \
-    jq \
-    curl \
-    librsvg2-2 \
-    librsvg2-dev \
-    librsvg2-common
-
-# note jq and curl are used in renv_install.sh
-# librsvg2 libs are common dependencies of some R plotting libraries
+  libncurses5-dev \
+  libncursesw5-dev \
+  parallel \
+  libgit2-dev \
+  tk-dev \
+  jq \
+  curl \
+  librsvg2-2 \
+  librsvg2-dev \
+  librsvg2-common
 
 USER ${NB_USER}
-
 # install the R dependencies
-## make the renv install script and renv.lock file
-## available in the working dir and run the install
-COPY .renv_install.sh .
+COPY renv_install.sh .
 COPY renv.lock .
-RUN bash .renv_install.sh
-## ensure renv lock is in the project directory
+RUN bash renv_install.sh
 COPY renv.lock /home/rstudio/renv.lock
 COPY install.R /tmp/
 RUN R -f /tmp/install.R
 
-# To apply a custom RStudio config uncomment the line below
-# ENV RSTUDIO_CONFIG_HOME=/home/rstudio/work//.rstudio_config_dir
+# apply a custom RStudio config
+# use .rstudio_config_dir for global rstudio preferences
+ENV RSTUDIO_CONFIG_HOME=/home/rstudio/work/literate-science/.rstudio_config_dir
 
 ## Clean up the /home/rstudio directory to avoid confusion in nested R projects
 RUN rm /home/rstudio/.Rprofile; rm /home/rstudio/renv.lock
@@ -54,7 +49,7 @@ RUN pip3 install -r /tmp/requirements.txt
 # RENKU_VERSION determines the version of the renku CLI
 # that will be used in this image. To find the latest version,
 # visit https://pypi.org/project/renku/#history.
-ARG RENKU_VERSION=2.3.2
+ARG RENKU_VERSION=1.7.1
 
 ########################################################
 # Do not edit this section and do not add anything below
