@@ -1,23 +1,18 @@
---- 
-title: "Literate Science"
-author: "Richard J. Acton"
-date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
-always_allow_html: true
-output: bookdown::gitbook
-documentclass: book
-bibliography: [book.bib, packages.bib, references.bib]
-biblio-style: apalike
-link-citations: yes
-github-repo: RichardJActon/literate_science
-description: "These are my thought on reforms to academic publishing"
----
+## Literate Science
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+*A new paradigm for academic publishing*
 
-# Introduction {#intro}
+__This is currently very much a work in progress and may change dramatically and rapidly, some sections may be drafts, outlines and bullet points to be filled in and properly edited as I go__
+
+## Summary
+
+I have two main proposals:
+
+__Literate Publishing__ - An Open Source academic authoring, publishing and review platform which provides reproducible analyses by linking data, computation and results
+
+__Review Bounties__ - a new business model for academic publishers
+
+### Literate Publishing
+
+### Review Bounties
+
