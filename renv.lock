@@ -9,9 +9,16 @@
     ]
   },
   "Packages": {
-    "canvasXpress": {
+     "htmlwidgets": {
+      "Package": "htmlwidgets",
+      "Version": "1.5.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": []
+    },
+   "canvasXpress": {
       "Package": "canvasXpress",
-      "Version": "1.42.9",
+      "Version": "1.37.4",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": []
