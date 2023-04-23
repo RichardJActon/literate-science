@@ -11,6 +11,7 @@ FROM ${RENKU_BASE_IMAGE}
 # except for the last end with backslash '\' to continue the RUN line
 #
 USER root
+RUN apt-get clean
 RUN apt-get -y update && \
   apt-get clean && \
   apt-get install -y --no-install-recommends \
