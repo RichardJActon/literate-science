@@ -12,7 +12,7 @@ book:
   repo-branch: master
     # favicon: 
   repo-actions: [edit, issue, source]
-  downloads: [pdf, epub]
+  # downloads: [pdf, epub]
   chapters:
     - index.qmd
     - 001-intro.qmd
@@ -39,9 +39,9 @@ format:
     theme:
       dark: [darkly, theme.scss]
       light: [flatly, theme.scss]
-  pdf:
+  # pdf:
     # cover-image: 
-    documentclass: scrreport
+    # documentclass: scrreport
   # epub:
     # cover-image: 
 
