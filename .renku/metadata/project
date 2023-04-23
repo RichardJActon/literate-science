@@ -1,0 +1,38 @@
+{
+  "@renku_data_type": "renku.domain_model.project.Project",
+  "@renku_oid": "project",
+  "agent_version": "2.3.2",
+  "annotations": [],
+  "creator": {
+    "@renku_data_type": "renku.domain_model.provenance.agent.Person",
+    "@renku_data_value": {
+      "affiliation": null,
+      "alternate_name": null,
+      "email": "richardjacton@pm.me",
+      "id": "mailto:richardjacton@pm.me",
+      "name": "Richard J. Acton"
+    }
+  },
+  "date_created": {
+    "@renku_data_type": "datetime.datetime",
+    "@renku_data_value": "2023-04-23T11:50:33.289554+01:00"
+  },
+  "description": null,
+  "id": "/projects/richardjacton/literate-science",
+  "keywords": [],
+  "minimum_renku_version": "2.1.0",
+  "name": "literate-science",
+  "template_metadata": {
+    "@renku_data_type": "renku.domain_model.project.ProjectTemplateMetadata",
+    "@renku_data_value": {
+      "immutable_template_files": [],
+      "metadata": "{\"__template_source__\": \"https://github.com/SwissDataScienceCenter/contributed-project-templates\", \"__template_ref__\": null, \"__template_id__\": \"Renv\", \"__namespace__\": \"richardjacton\", \"__sanitized_project_name__\": \"\", \"__repository__\": \"\", \"__project_slug__\": \"\", \"__project_description__\": null, \"__renku_version__\": \"2.3.2\", \"__name__\": \"literate-science\", \"name\": \"literate-science\", \"__template_version__\": \"64a186f6418b638b6eaab12a7d17ed24fa91c1b3\", \"__automated_update__\": true}",
+      "ssh_supported": false,
+      "template_id": "Renv",
+      "template_ref": null,
+      "template_source": "https://github.com/SwissDataScienceCenter/contributed-project-templates",
+      "template_version": "64a186f6418b638b6eaab12a7d17ed24fa91c1b3"
+    }
+  },
+  "version": 10
+}
