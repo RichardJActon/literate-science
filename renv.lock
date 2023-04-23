@@ -9,6 +9,13 @@
     ]
   },
   "Packages": {
+    "canvasXpress": {
+      "Package": "canvasXpress",
+      "Version": "1.42.9",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": []
+    },
     "MASS": {
       "Package": "MASS",
       "Version": "7.3-56",
