@@ -30,7 +30,7 @@ comments:
 
 bibliography: [book.bib]
 #biblio-style: apalike
-link-citations: yes
+link-citations: true
 description: "The problems of academic publishing and some thoughts on how to fix them"
 
 format:
