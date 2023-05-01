@@ -30,9 +30,7 @@ Version/source control of text with [git](https://en.wikipedia.org/wiki/Git) fac
 Version controlled texts can also facilitate a better process for and healthier attitude towards errata and corrigenda [as has been proposed elseshere](https://doi.org/10.1098/rsbl.2022.0463).
 'Red teaming' from the security community the use of which in academia has also been [proposed before](https://daniellakens.blogspot.com/2020/05/red-team-challenge.html)
 Reproducible computational environments with containerization technologies such as docker and Continuous integration/deployment pipelines to automate testing, checking and building and deployment/publication of software products.
-Platforms such as [Renku](https://renkulab.io) which facilitate the use of these tools including [gitlab](https://about.gitlab.com/) together in an integrated platform.
-
-[Whole Tale](https://wholetale.org/)
+Platforms such as [Renku](https://renkulab.io) & [Whole Tale](https://wholetale.org/) which facilitate the use of these tools including [gitlab](https://about.gitlab.com/) together in an integrated platform.
 
 Open-source academic publishing suites exist and might make open access easier but they replicate the same flawed formats as well as publication & review workflows as the big comercial journals and thus fail to adaquately address the larger problems of the industry. For example:
 [Open Journal Systems](https://pkp.sfu.ca/software/ojs/), and [Janeway](https://janeway.systems/).
