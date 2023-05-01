@@ -6,22 +6,36 @@ They range from the seemingly minor impracticalities associated with submitting 
 
 These proposals draw on ideas from previous 'unconventional' publication platforms/initiatives such as: 
 [f-1000](https://f1000.com/index.html) &, [peerXiv](https://peerxiv.web.app/about) with their post-publication review processes.
-Atmospheric chemistry and physics (ACP) and [interactive review process](https://www.atmospheric-chemistry-and-physics.net/peer_review/interactive_review_process.html).
+Atmospheric chemistry and physics (ACP) and their [interactive review process](https://www.atmospheric-chemistry-and-physics.net/peer_review/interactive_review_process.html).
 [PCI (peer community in)](https://peercommunityin.org/) with their distributed journal-less peer-review process.
 [PubPeer](https://pubpeer.com/static/about) with their effectiveness at finding fraudulent work.
-[peerj](https://peerj.com) with their comments flipped-subscription model and [reviewer rewards](https://peerj.com/contributions/about/).
+[peerj](https://peerj.com) with their comments, flipped-subscription model, and [reviewer rewards](https://peerj.com/contributions/about/).
 [elife](https://elifesciences.org) particularly their [libero](https://libero.pub) publishing suite & [computationally reproducible articles](https://elifesciences.org/labs/ad58f08d/introducing-elife-s-first-computationally-reproducible-article) with [stencila](stenci.la).
 [Octopus](https://www.octopus.ac/) with their different publication types. 
 [ResearchHub](https://www.researchhub.com/about) with their prioritisation system.
 [rescognito](https://rescognito.com/about.php) and their system of credit and attribution of work.
-[JoVE - journal of visualised experiments](https://www.jove.com/) brining other media to academic publication space. [microPublication](https://www.micropublication.org/) givign us smaller units of publication.
-They also draw from [RopenSci's software review process](https://ropensci.org/software-review/) and Journal of open source software [JOSS](https://joss.theoj.org), indeed extensive inspiration is drawn from the free & open source software communities more generally.
-In addition they draw from the ideas of [nano-publications](http://nanopub.org/wordpress/) and single observation publishing from ScienceMatters/EUREKA ^[Now defunct? Dead links https://www.reddit.com/r/TokenEUREKA/, https://doi.org/10.1038/d41586-019-00447-9, https://medium.com/eureka-token/stories-can-wait-science-cant-33810dd17c9f], as well as community contributions to shared protocols and pipelines from [protocols.io](https://www.protocols.io/) ^[GPL like agreement for lab protocols? Copy the obligation to make changes available to the upstream, and encourage upstreaming them yourself by publishing your protocols under the same licence. If you use a protocol and cite it you must describe your modifications to it and release them under the same terms as the original. enforcibility? comercial incentives might limit adoption due to regressive attitudes to IP control rather than emphasis on convenience and quality of service] and [nf-core](https://nf-co.re).
+[JoVE - journal of visualised experiments](https://www.jove.com/) brining other media to academic publication space.
+[microPublication](https://www.micropublication.org/) giving us smaller units of publication.
+They also draw from [RopenSci's software review process](https://ropensci.org/software-review/) and Journal of open source software [JOSS](https://joss.theoj.org) review process, indeed extensive inspiration is drawn from the free & open source software communities more generally.
+In addition they draw from the ideas of [nano-publications](http://nanopub.org/wordpress/) and 'single observation publishing' from ScienceMatters/EUREKA ^[Now defunct? Dead links https://www.reddit.com/r/TokenEUREKA/, https://doi.org/10.1038/d41586-019-00447-9, https://medium.com/eureka-token/stories-can-wait-science-cant-33810dd17c9f] and the 'linked data'/'semantic web' concepts which nano-publications draw on.
+
+As well as community contributions to shared
+
+protocols [protocols.io](https://www.protocols.io/) ^[Notion - GPL like agreement for lab protocols? Copy the obligation to make changes available to the upstream, and encourage upstreaming them yourself by publishing your protocols under the same licence. If you use a protocol and cite it you must describe your modifications to it and release them under the same terms as the original. enforcibility? comercial incentives might limit adoption due to regressive attitudes to IP control rather than emphasis on convenience and quality of service]
+pipelines [nf-core](https://nf-co.re), and [WorkflowHub](https://workflowhub.eu/).
 
 Furthermore a number of tools, ideas and practices from modern software development contribute to the bases of some of the proposals to follow.
 These include: The concept of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) in which code and it's documentation, context and explanation are part of the same corpus of text.
 Version/source control of text with [git](https://en.wikipedia.org/wiki/Git) facilitating distributed collaboration on texts, history and tracking of changes, and attribution of authorship of individual contributions to a text.
-Reproducible computational environments with containerization technologies such as docker and Continuous integration/deployment pipelines to automate testing, checking and building and deployment/publication of software products. Platforms such as [Renku](https://renkulab.io) which facilitate the use of these tools including [gitlab](https://about.gitlab.com/) together in an integrated platform.
+Version controlled texts can also facilitate a better process for and healthier attitude towards errata and corrigenda [as has been proposed elseshere](https://doi.org/10.1098/rsbl.2022.0463).
+'Red teaming' from the security community the use of which in academia has also been [proposed before](https://daniellakens.blogspot.com/2020/05/red-team-challenge.html)
+Reproducible computational environments with containerization technologies such as docker and Continuous integration/deployment pipelines to automate testing, checking and building and deployment/publication of software products.
+Platforms such as [Renku](https://renkulab.io) which facilitate the use of these tools including [gitlab](https://about.gitlab.com/) together in an integrated platform.
+
+[Whole Tale](https://wholetale.org/)
+
+Open-source academic publishing suites exist and might make open access easier but they replicate the same flawed formats as well as publication & review workflows as the big comercial journals and thus fail to adaquately address the larger problems of the industry. For example:
+[Open Journal Systems](https://pkp.sfu.ca/software/ojs/), and [Janeway](https://janeway.systems/).
 
 The economics and game theory of proposed solutions as well as gaining the trust and confidence of the academic community are given central importance here and the technical considerations are a means to this end.
 
@@ -29,5 +43,5 @@ What I describe here aspires to be a unified vision for bringing together a numb
 Whilst I think the separate elements of this fit together into a cohesive whole I would urge the reader to consider the merits of the specific proposals separately as I think some are individually valuable. 
 
 I welcome critique and feedback on all of this content.
-This document is published as a 'git-book' using `bookdown` [@R-bookdown] if you would like to discuss it's content please do so in the [discussion section](https://github.com/RichardJActon/literate_science/discussions) associated with git repository on [github](https://github.com/RichardJActon/literate_science) if you have a specific problem, fact check or correction please [open an issue](https://github.com/RichardJActon/literate_science/issues), if you would like to suggest an edit, and are willing to specify the exact changes you'd like to see made please open a [pull request](https://github.com/RichardJActon/literate_science/pulls).
+This document is published as a 'git-book' using [Quarto](https://quarto.org) if you would like to discuss it's content please do so in the [discussion section](https://github.com/RichardJActon/literate-science/discussions) associated with git repository on [github](https://github.com/RichardJActon/literate-science) if you have a specific problem, fact check or correction please [open an issue](https://github.com/RichardJActon/literate-science/issues), if you would like to suggest an edit, and are willing to specify the exact changes you'd like to see made please open a [pull request](https://github.com/RichardJActon/literate-science/pulls).
 
