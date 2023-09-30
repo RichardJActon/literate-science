@@ -1,0 +1,43 @@
+# Workflow
+
+## Hypothetical Publishing Workflow
+
+Example of the sequence of events for a registered report publication with a coupled grant and review bounty
+
+- hypothesis / question
+	- create a project repository
+	- describe your hypothesis, question and plant to tackle it with a literate programming tool to generate a page describing it
+	- mint a DOI ?v0.0.0-question
+- v0.0.0 pre-registration
+	- a registered report coupled to a grant application in which the grant awarding body and a journal agree that your proposed research project is worth funding and publishing the results of
+	- review bounty for aditional second round reviewer set, initial reviewers compensated by grant body, bug bounty also set
+	- open review - grant and registered report reviewers open issues against the pre-registered study design
+	- protocols for any planned methods based on prior experience / preliminary methods development published as a seperate citable research output
+- v1.0.0 - reviewed and funded project plan published
+- Post-review you have running code that would perform the analysis of the data that you proposed to generate
+- performing the research project
+	- using published protocol and submitting revisions to it to reflect protocol optimisations and lessons learn from use in practice - cito:usesMethodIn
+- depositing the data in a suitable repository (seperate citable research output)
+	- run the pre-planned analysis - pulling in the data using it's DOI/URI from the repository - cito:usesDataFrom the deposited dataset
+	- write up any serendipodus discoveries and any issues arrising from unanticipated aspects of planned experiments and analysis.
+- v1.N.N-pre pre-print i.e. pubilcally tag the draft to be submitted for review.
+- open-review - reviewers open issues against the repo, authors respond in the comment threads under the issues and editors arbitrate if disagreements need help resolving, updates are proposed in branches and merged
+- v2.0.0 article published and bug bounty posted
+- v2.0.1 typos fixed - patch version incremented
+- some time passes without an error being found and a portion of the review bounty is paid back to the authors and reviews
+- v3.0.0 error materially altering a conclusion found, authors and reviewers concur that this is in fact an error and the remaining bug bounty is paid out, the major version is incremented and an errarum notice included in the release notes
+- v3.1.0 new analysis methods applied to the previous dataset
+- v4.0.0 new analysis is reviewed on a fresh bounty
+- v4.1.0 new dataset is analysed with the same method, increasing the power of the study
+- v5.0.0 new conclusions reviewed on a fresh bounty
+- new external bounty issued by a pharma company looking to base a drug development around a conclusion in this paper and incentivise additional external scrutiny of this work to avoid wasting resources on a poor evidence base
+
+## semantic versioning for academic publications
+
+0.0.0 - Authors first public version on which they are solicing general feedback, akin to a pre-print
+1.0.0 - and all subsequent major version changes occur only after a process which involves a 3rd party reviewer
+
+minor version increments when the semantic content changes in any way that alters the meaning of the work
+patch version increments when minor issues like spelling mistakes, for formatting revisions are made
+
+
