@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="The problems of academic publishing and some thoughts on how to fix them">
+
+<title>Literate Science - 4&nbsp; Incentives</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./004-Medium_matters.html" rel="next">
+<link href="./002-units_of_publication.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./003-Incentives.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Incentives</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Literate Science</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://renkulab.io/gitlab/racton/literate-science" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-git"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Literate Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./002-units_of_publication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Units of publication</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./003-Incentives.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Incentives</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./004-Medium_matters.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Medium Matters</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./005-Computational-irreproducibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Computational Pitfalls</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./006-Key_technologies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Key Technologies</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./007-The_platform.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The platform</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./008-Adoption.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Adoption</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./010-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-old-funding-models" id="toc-the-old-funding-models" class="nav-link active" data-scroll-target="#the-old-funding-models"><span class="header-section-number">4.1</span> The Old Funding models</a>
+  <ul class="collapse">
+  <li><a href="#pathologies-of-the-subscription-model-in-the-internet-era" id="toc-pathologies-of-the-subscription-model-in-the-internet-era" class="nav-link" data-scroll-target="#pathologies-of-the-subscription-model-in-the-internet-era"><span class="header-section-number">4.1.1</span> Pathologies of the Subscription Model in the Internet Era</a></li>
+  <li><a href="#open-access-wont-save-us" id="toc-open-access-wont-save-us" class="nav-link" data-scroll-target="#open-access-wont-save-us"><span class="header-section-number">4.1.2</span> Open Access Won’t Save Us</a></li>
+  </ul></li>
+  <li><a href="#what-is-the-function-we-want-from-the-publishing-industry" id="toc-what-is-the-function-we-want-from-the-publishing-industry" class="nav-link" data-scroll-target="#what-is-the-function-we-want-from-the-publishing-industry"><span class="header-section-number">4.2</span> What is the function we want from the publishing industry?</a></li>
+  <li><a href="#the-review-bounty" id="toc-the-review-bounty" class="nav-link" data-scroll-target="#the-review-bounty"><span class="header-section-number">4.3</span> The Review bounty</a>
+  <ul class="collapse">
+  <li><a href="#poor-incentives-for-quality-publishing" id="toc-poor-incentives-for-quality-publishing" class="nav-link" data-scroll-target="#poor-incentives-for-quality-publishing"><span class="header-section-number">4.3.1</span> poor incentives for quality publishing</a></li>
+  </ul></li>
+  <li><a href="#x" id="toc-x" class="nav-link" data-scroll-target="#x"><span class="header-section-number">4.4</span> x</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="https://renkulab.io/gitlab/racton/literate-science/edit/master/003-Incentives.qmd" class="toc-action">Edit this page</a></p><p><a href="https://renkulab.io/gitlab/racton/literate-science/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://renkulab.io/gitlab/racton/literate-science/blob/master/003-Incentives.qmd" class="toc-action">View source</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Incentives</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><em>Aligning the incentives of authors, publishers &amp; reviewers to favor good science</em></p>
+<section id="the-old-funding-models" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="the-old-funding-models"><span class="header-section-number">4.1</span> The Old Funding models</h2>
+<p><em>This section is a bit polemical and here mostly for those outside of academia who need the context for the system I’m hoping to disrupt</em></p>
+<section id="pathologies-of-the-subscription-model-in-the-internet-era" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="pathologies-of-the-subscription-model-in-the-internet-era"><span class="header-section-number">4.1.1</span> Pathologies of the Subscription Model in the Internet Era</h3>
+<p><em>For those unfamiliar with the current problems in academic publishing</em></p>
+<p>The classic funding model for an academic journal was the subscription model where a university library, and/or department held a subscription to the journals that the university’s staff wanted to read. These subscription fees paid for the administration and printing of the journal. In the era of physical publication large scale systematic infringement on a journal’s copyright would be expensive, requiring a printing press and relatively easy to enforce. With the advent of the digital age journals ran into the now all too familiar problems of business models that relied on the scarcity of a physical medium that is now practically infinitely replicable at negligible cost.</p>
+<p>Now anyone with an internet connection can have a distribution network approximately equal to that of the official source and copyright is unenforceable in practice with a lot of unpleasant side effects arising from attempts to make it so. Like most businesses they engaged in the attempt keep the same business model by making an infinitely replicable digital artifact artificially scarce with pay walls as well as other rather futile attempts to deny the new reality. Now rendered effectively both non-excludable and non-rivalrous electronic academic papers became a true economic public good in a way that physical copies were not. All attempts to deny this development and return to the undesirable condition of scarcity have been technically and/or politically dangerous. New business models which do not depend on the scarcity of access to papers must replace the old way of doing things, if we are to get back to a reasonable academic publishing market.</p>
+<p>The loss of profitability of smaller journals resulted in increased consolidation of the publishing market into a small number of large concerns. These larger publishing houses had some economies of scale, and usually some prestige publications still with print versions and which commanded a premium subscription. These large publishing houses made the most of the shield provided against real competition by the grant of ‘limited’ monopoly afforded to them by nation states in the form copyright law and the threat of it’s enforcement, a threat which has claimed at least one life <a href="https://en.wikipedia.org/wiki/Aaron_Swartz">Aaron Swartz</a>. Note that this is a copyright held by the journal on content which they have only a minor role in creating. It is scientists, usually publicly funded, that write and review these articles. The journal provides basic quality pre-screening, matchmaking between authors and reviewers, and if you are lucky copy editing. Placed in a position of oligopoly power the publishing houses were, and still are to a significant degree, able to dictate terms to the university libraries which purchase subscriptions. This has opened the door to classic oligopolisitic practices such as bundling high quality journals in with poor quality ones, a pattern that will be familiar to anyone unfortunate enough to have had to engage with a company selling what the Americans refer to as ‘cable TV’. The management of these complex subscription packages has been outsourced within arcane academic bureaucracies the absurdity and complexity of which put to shame the worst imaginings of Kafka and Heller. Consequently, the majority of academics who actually use these journals have little to no information about how this works and little hope of providing feedback about the quality of service to their librarians that will have a meaningful impact on purchasing decisions. This decoupling of purchasing decisions from the users of the service contributes to the ability of the publisher to continue to deliver worse services at higher prices.</p>
+</section>
+<section id="open-access-wont-save-us" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="open-access-wont-save-us"><span class="header-section-number">4.1.2</span> Open Access Won’t Save Us</h3>
+<p><em>To squash the hopes and dreams of those familiar with the problems of the subscription model but who think open access is a panacea</em></p>
+<p>Don’t get me wrong open access is unequivocally a step in the right direction with respect to making publicly funded research available to the public. <a href="https://oa2020.org/">Open Accesss 2020</a> &amp; <a href="https://www.coalition-s.org/">Plan S</a> go a long way to addressing this issue they are, however, far from enough to fix the malaise in academic publishing. Alas open access as currently conceived allows the publishers to give up on an expensive losing fight with ‘pirates’, (hats off to captain <a href="https://en.wikipedia.org/wiki/Sci-Hub">Alexandra Elbakyan</a> of the good ship sci-hub), and still get paid. Unfortunately the publishers saw this coming, it’s been in the works of years and they’ve had time to devise a cunning plan. The pay to publish model has many of the same problems as the old subscription model. In some cases it makes the actual price paid to publish more transparent to the academics paying it from their grants, but this can quickly fade into the background cost of doing business along with all the other overpriced things we spend grant money on. <del>If deals with publishers to bundle x number of publications from affiliated researchers of the grant awarding body or university in the set of Y journals are not already in the works I’ll eat my hat.</del> Scratch that I looked it up and it’s already happening - I promise I predicted it before I checked, see: <a href="https://www.projekt-deal.de/about-deal/">Projekt DEAL</a> This provides a convenient return the status quo of extracting large fees from research grants to pay for publishing just by a slightly different bureaucratic channel and with little to no improvement in the incentive to provide a quality service. If anything publishers will gain increased revenue from this having successfully spun it as a concession on their part to move to open access, so that they can charge as much or more in publication fees as they charged in subscriptions in the name of a ‘sustainable’ business model. Because anything less that multi-billion dollar annual profits is clearly unsustainable.</p>
+</section>
+</section>
+<section id="what-is-the-function-we-want-from-the-publishing-industry" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="what-is-the-function-we-want-from-the-publishing-industry"><span class="header-section-number">4.2</span> What is the function we want from the publishing industry?</h2>
+<blockquote class="blockquote">
+<p>What do we need from a journal and how can we incentivise that and only that reviewer / author matching prioritisation / curation type setting, proofing plagarism, hosting</p>
+</blockquote>
+<p>In the current publishing ecosystem incentives are often actively bad and when they are not actively bad they are often pretty neutral with respect to the key outcome of good quality scientific research.</p>
+<p><a href="https://blog.codinghorror.com/falling-into-the-pit-of-success/">pit of sucess</a></p>
+<blockquote class="blockquote">
+<p>The Pit of Success: in stark contrast to a summit, a peak, or a journey across a desert to find victory through many trials and surprises, we want our customers to simply fall into winning practices by using our platform and frameworks. To the extent that we make it easy to get into trouble we fail.</p>
+</blockquote>
+<p>The problem with Altmetrics: <a href="https://en.wikipedia.org/wiki/Goodhart%27s_law">goodhart’s law</a> issue with metrics/impact - resolve through alignment</p>
+</section>
+<section id="the-review-bounty" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="the-review-bounty"><span class="header-section-number">4.3</span> The Review bounty</h2>
+<p><em>A new funding model for academic publishing</em></p>
+<p>I propose a new system for funding academic publications which I call review bounties. If you want to publish a manuscript you don’t pay a publication fee you put up a bounty for it’s review. If you wish to be a publisher you don’t put up a pay-wall and charge an access subscription you take a cut of the review bounty. As an author you take what you want to publish to a pre-print and review server you state how much you are willing to pay to have it reviewed and published and you make ranked choice list of venues you would be interested in publishing your manuscript. Publications then have the option to take you up on overseeing the review and possible publication of your manuscript. They contact reviewers who agree to review the manuscript in exchange for an agreed cut of the review bounty. Reviews are open, not anonymous, as are all payment amounts. This openness is essential to prevent grift as if a journal permits you to simply pay some friends for an easy review their reputation as a venue for rigorous review must suffer.</p>
+<p>There are a number of interesting variations you can make to this basic model. consider the ‘bug bounty’ in which a portion of the review bounty is held in reserve and anyone who finds an error in the work that is of material relevance to the conclusions of the work can claim the bounty. This can be decided by the senior author, a majority of the authors or a consensus of the publisher and original reviewers. The bug bounty accrues back to the authors, publisher and reviewers over time, rewarding them for making non-obvious errors and incentivizing bug hunters to find errors quickly and thus get larger rewards.</p>
+<p>In <a href="https://doi.org/10.1371/journal.pbio.0050107">“An Incentive Solution to the Peer Review Problem”</a> <span class="citation" data-cites="hauser2007">(<a href="#ref-hauser2007" role="doc-biblioref">Hauser and Fehr 2007</a>)</span> Marc Hauser &amp; Ernst Fehr propose that reviewers who fail to deliver their reviews on time be penalized by having any papers they subsequently seek to have published at the journal for which their review was late be held up twice as long as they made other authors wait. This proposal may incentivize timely review but punishing tardy reviewers in this way has serious negative externalities, it delays the publication of potentially important work and will disincentivize anyone who has ever been late with a review from publishing in that journal again. This is not likely to be convenient for the journal or the reviewer. Overall this does not seem like good game theory outside of a very narrow scope, when designing incentive systems we must keep in mind that the end goal is better science we can’t optimize solely for punctual reviewers. A solution to this problem in the review bounty system is that a reviewer forfeits the bounty if a review is not provided by the deadline. Then another reviewer can claim it, or the original reviewer can reclaim part of it but only if they now provide their review up-front prior to another reviewer claiming the bounty. The longer an author is kept waiting beyond the deadline the more of their bounty they recoup with the cost coming partly from the publisher to incentivise speedy organisation of the review.</p>
+<p>Anonymity and secrecy in peer review is in my opinion thoroughly over-rated, it can conceal abuses of power like holding up someone else’s paper so you or your mate can publish first as much or more than it provides scope for junior people to critique the work of senior people. Openness increases the reputational risk to senior people of petty behaviour like denying someone a job or grant application because they canned your paper. Make a habit of that sort of thing and people will now notice and hold you to account. If you can’t both respectfully take and dish out an intellectually rigorous critique what are you doing in this line of work?</p>
+<p>If perspective authors cannot afford a review bounty could also have a croud funding (not just public but potentially grant awarding bodies, foundations etc.) method built into the platform to allow the sponsorship of pre-prints to afford enough of a bounty to get reviewed and published. Option a portion of bounty only payable if the rest of the minimum value is met by others and reviewers secured.</p>
+<section id="poor-incentives-for-quality-publishing" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="poor-incentives-for-quality-publishing"><span class="header-section-number">4.3.1</span> poor incentives for quality publishing</h3>
+<ul>
+<li><p>formatting</p>
+<ul>
+<li>general friction around formatting file types and styling</li>
+<li>catering to pagination and the dead tree</li>
+<li>figure panels</li>
+<li>lack of useful animation/interactivity</li>
+</ul></li>
+<li><p>declining readability</p>
+<ul>
+<li>Scientific manuscripts are getting <a href="https://doi.org/10.7554/eLife.27725.001">harder to read</a> <span class="citation" data-cites="Plaven-Sigray2017">(<a href="#ref-Plaven-Sigray2017" role="doc-biblioref"><strong>Plaven-Sigray2017?</strong></a>)</span></li>
+</ul></li>
+<li><p>Citation Dilution (the bigger a paper the less specific you are being when you reference it) ~ credit dilution / attribution?</p></li>
+<li><p>https://www.pnas.org/content/118/41/e2021636118</p></li>
+<li><p>scope beyond reviewer competence</p>
+<ul>
+<li>particularly in biology the are massive papers published whith 10 years ago would have taken 10 years to complete can now be a sinlge complec paper</li>
+</ul></li>
+<li><p>narative seeking / lack of pre-registration/distinction between the predicted and the post hoc</p></li>
+<li><p>commitment to metaresearch to improve research publications</p></li>
+<li><p>A public benefit corporation like model or equivolent corporate structure to help prevent a return to the current rachet</p></li>
+</ul>
+<p>review bounties as a key component of the attracting quality reviewer time away from established publishers</p>
+<p>physics archive - decoupling of publishing from archiv, pre-prints don’t solve the problem need a new hybrid solution</p>
+<p>Some have made the case that pre-prints are all we need and we can simply cut out the middle man of publishers altogether. Making the case that we can and rely on post-publication review for quality assurance and potentially on algorithmic methods for curation. Most, however see that the journals do serve some curatorial and quality filtering roles, as well as providing an organizing function for arranging that peer-review actually take place. The problem is that under the current economic model the big publishing houses are in a position to act extractively and to seek rents on their oligopoly of prestige publishing, whilst providing a pretty poor quality of service to the academics who are ostensibly their customers. The value that they provide is substantially offset by this behaviour which arises from some poorly aligned incentives. This misalignment is costing billions often in public research money that could be much better allocated if their were a healthier market in publication outlets.</p>
+</section>
+</section>
+<section id="x" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="x"><span class="header-section-number">4.4</span> x</h2>
+<p>At the moment it is reasonably expensive in both time and money to get a publication in a high prestige journal. Getting such a publication constitutes a reasonably strong and reliable signal that you have put in quite a lot of work to the process or trying to get your paper published. This however is not perfectly</p>
+<p><a href="https://en.wikipedia.org/wiki/Costly_signaling_theory_in_evolutionary_psychology">costly signaling theory</a> in publishing - jumping through arbitrary hoops to signal prestige? make it harder to fake signals, gaming metrics/acceptance with low cost noise that sounds good but lacks substance, stronger openness norms and smaller units give this bad quality signal less space to hide</p>
+<p>providing your analysis as a literate programming artifact is a fairly high cost signal that is hard to fake, it also has much lower verification costs for 3rd parties. I can just go and look at the code underpinning your paper and see if what you did is good before I would have to ask you, coming from someone you don’t know a request to look over your exact methods</p>
+<p>? croud funded news and views bounties? pol.is and quadratic voting for review/synthesis subject selection</p>
+<p>such a platform has the potential to create a transparent competative market for publication services especially if aided by regulatory or other institutional interventions that penalise the predatory business practices of current industry players</p>
+<p>The authors of the The tragedy of the reviewer commons (<a href="https://doi.org/10.1111/j.1461-0248.2008.01276.x" class="uri">https://doi.org/10.1111/j.1461-0248.2008.01276.x</a>) <span class="citation" data-cites="hochberg2009">(<a href="#ref-hochberg2009" role="doc-biblioref">Hochberg et al. 2009</a>)</span> identify as an issue: “attempting to publish the smallest acceptable unit” this appears to conflict with proposals for ‘micropublications’ or other smaller units of publication but I would argue that the underlying concerns that lead to calling this an issue arise from conceiving as a ‘conventional’ paper as the minimum viable unit of unit publication.</p>
+<p>steven novella - minimum publishable unit vs minimal unit of publication, emphasis publishable several crappy experiments and a story, if experiment have to stand on their own they will need to be of higher quality not obfucated by being strung together in a narrative.</p>
+<p>see also sciencematters.io - ‘single observation publishing’</p>
+<p>see the science breaker (universite de geneve) lay summaries / news and views commision (bounties from anyone?)</p>
+<p>reducing the size of the unit of publication from a full paper to a single experiment, dataset, protocol description, experimental design, theoretical model etc. This makes it easier to do your best work because the scope of the task is smaller, it also make it easier to review effectively</p>
+<p>If we conceive of the minimum unit of scientific publication as what has become a conventional paper with several often complex experiments and an overarching narrative then an underdeveloped paper can indeed be burdensome to review. We have a compounding problem of increasing technical complexity of papers due to in part rising expectations in the amount of work going into a paper to make it worthy of a ‘top tier’ journal and increasing volume of articles.</p>
+<p>The authors of ‘The tragedy of the reviewer commons’ <span class="citation" data-cites="hochberg2009">(<a href="#ref-hochberg2009" role="doc-biblioref">Hochberg et al. 2009</a>)</span> pre-review by colleagues - do this on platform and don’t waste time circulating a bunch of copies by email and reconciling the resulting comments, have and invited reviewers feature that lets you invite input on your work prior to submitting it for formal review</p>
+<p>reviewing a modern paper is a daunting task - uncertainty about the expertise of the other reviewers what is the subset of things in the paper which you are expected to the expert reviewer on are the areas outside your scope adaquately covered by other reviewers? - I full expect people often tacitly assume the editors have handled this adequately as it theoretically their responsibility and just review what they feel comfortable reviewing.</p>
+<p>medium/form mismatch - way to much for the short format paper</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-hauser2007" class="csl-entry" role="listitem">
+Hauser, Marc, and Ernst Fehr. 2007. <span>“An Incentive Solution to the Peer Review Problem.”</span> <em>PLoS Biology</em> 5 (4): e107. <a href="https://doi.org/10.1371/journal.pbio.0050107">https://doi.org/10.1371/journal.pbio.0050107</a>.
+</div>
+<div id="ref-hochberg2009" class="csl-entry" role="listitem">
+Hochberg, Michael E., Jonathan M. Chase, Nicholas J. Gotelli, Alan Hastings, and Shahid Naeem. 2009. <span>“The Tragedy of the Reviewer Commons*.”</span> <em>Ecology Letters</em> 12 (1): 2–4. <a href="https://doi.org/10.1111/j.1461-0248.2008.01276.x">https://doi.org/10.1111/j.1461-0248.2008.01276.x</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./002-units_of_publication.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Units of publication</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./004-Medium_matters.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Medium Matters</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
